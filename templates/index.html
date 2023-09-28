@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code</title>
+  </head>
+  <body>
+    <div class="title">
+    <h1>QR Code Generator</h1>
+    <h2>Insert a link to generate a QR Code</h2>
+    </div>
+
+    <form action="/" method="POST">
+        <input type="text" name="link">
+        <button type="submit">Generate QR</button>
+    </form>
+
+    <div class="generated">
+        <img src="{{data}}" alt="">
+        <p>Here is the QR Codegenerated!</p>
+    </div>
+  </body>
+</html>
